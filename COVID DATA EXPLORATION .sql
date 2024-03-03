@@ -9,12 +9,12 @@ order by 3,4;
  where continent is not null ;
  --update data modify zeros into null in new cases and new deaths
 update covid_death
-SET new_cases = NULL
-WHERE new_cases = 0
+set new_cases = NULL
+where new_cases = 0
  -- newdeaths
- update covid_death
-SET new_deaths = null
-WHERE new_deaths = 0
+update covid_death
+set new_deaths = null
+where new_deaths = 0
 
 
 --select location,date, total_cases,total_deaths, population
